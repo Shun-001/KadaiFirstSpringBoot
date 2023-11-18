@@ -39,14 +39,14 @@ public class KadaiFirstController {
         return "実行結果：" + res;
     }
 
-    @GetMapping("/plus/{val6}/{val7}")
+    @GetMapping("/times/{val6}/{val7}")
     public String calcTimes(@PathVariable int val6, @PathVariable int val7) {
         int res = 0;
         res = val6 * val7;
         return "実行結果：" + res;
     }
 
-    @GetMapping("/devide/{val8}/{val9}")
+    @GetMapping("/divide/{val8}/{val9}")
     public String calcDivide(@PathVariable int val8, @PathVariable int val9) {
         int res = 0;
         res = val8 / val9;

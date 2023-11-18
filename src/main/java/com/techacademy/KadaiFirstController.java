@@ -25,31 +25,31 @@ public class KadaiFirstController {
     }
 
     // 以下仕様2
-    @GetMapping("/plus/{val2}/{val3}")
-    public String calcPlus(@PathVariable int val2, @PathVariable int val3) {
+    @GetMapping("/plus/{val1}/{val2}")
+    public String calcPlus(@PathVariable int val1, @PathVariable int val2) {
         int res = 0;
-        res = val2 + val3;
+        res = val1 + val2;
         return "実行結果：" + res;
     }
 
-    @GetMapping("/minus/{val4}/{val5}")
-    public String calcMinus(@PathVariable int val4, @PathVariable int val5) {
+    @GetMapping("/minus/{val1}/{val2}")
+    public String calcMinus(@PathVariable int val1, @PathVariable int val2) {
         int res = 0;
-        res = val4 - val5;
+        res = val1 - val2;
         return "実行結果：" + res;
     }
 
-    @GetMapping("/times/{val6}/{val7}")
-    public String calcTimes(@PathVariable int val6, @PathVariable int val7) {
+    @GetMapping("/times/{val1}/{val2}")
+    public String calcTimes(@PathVariable int val1, @PathVariable int val2) {
         int res = 0;
-        res = val6 * val7;
+        res = val1 * val2;
         return "実行結果：" + res;
     }
 
-    @GetMapping("/divide/{val8}/{val9}")
-    public String calcDivide(@PathVariable int val8, @PathVariable int val9) {
+    @GetMapping("/divide/{val1}/{val2}")
+    public String calcDivide(@PathVariable int val1, @PathVariable int val2) {
         int res = 0;
-        res = val8 / val9;
+        res = val1 / val2;
         return "実行結果：" + res;
     }
 
